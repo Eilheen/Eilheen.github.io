@@ -1,25 +1,99 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<title>CubeVerse — Minecraft сервер</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Оплата — CubeVerse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #2b2b45);
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 60px auto;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .product {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .product p {
+            margin: 8px 0;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            padding: 14px;
+            background: #2aabee;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: default;
+            opacity: 0.8;
+        }
+
+        .note {
+            font-size: 14px;
+            color: #cccccc;
+            margin-top: 15px;
+        }
+
+        a {
+            color: #aaccff;
+        }
+    </style>
 </head>
 <body>
 
-<h1>CubeVerse</h1>
-<p>Minecraft сервер</p>
+<div class="container">
+    <h1>Пополнение валюты</h1>
 
-<p>
-CubeVerse — игровой проект Minecraft.
-Игроки могут добровольно пополнять внутреннюю виртуальную валюту,
-используемую исключительно внутри игрового процесса.
-</p>
+    <div class="product">
+        <p><b>Товар:</b> Внутренняя донат-валюта сервера CubeVerse</p>
+        <p><b>Курс:</b> 1 рубль = 1 единица валюты</p>
+        <p>
+            Валюта используется исключительно внутри игрового процесса
+            и не имеет реальной ценности вне игры.
+        </p>
+    </div>
 
-<p>
-<a href="pay.html">Перейти к оплате</a> |
-<a href="rules.html">Правила и информация</a>
-</p>
+    <a class="button">Перейти к оплате</a>
+
+    <p class="note">
+        Платёжная ссылка формируется системой проекта через API платёжного агрегатора
+        и предоставляется пользователю через интерфейс проекта,
+        в том числе внутри игрового сервера Minecraft.
+    </p>
+
+    <p class="note">
+        После подтверждения оплаты валюта автоматически начисляется
+        на игровой аккаунт.
+    </p>
+
+    <p style="text-align:center;margin-top:20px;">
+        <a href="index.html">← На главную</a>
+    </p>
+</div>
 
 </body>
 </html>

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -18,21 +22,57 @@
             margin: 60px auto;
             background: rgba(0, 0, 0, 0.4);
             border-radius: 12px;
-            padding: 30px;
+            padding: 32px;
             box-shadow: 0 0 25px rgba(0,0,0,0.5);
         }
 
         h1 {
             text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .block {
+            background: rgba(255,255,255,0.1);
+            padding: 18px 20px;
+            border-radius: 10px;
+            margin-bottom: 18px;
         }
 
         p {
             line-height: 1.6;
-            margin: 12px 0;
+            margin: 10px 0;
+            color: #e0e0e0;
         }
 
-        a {
-            color: #aaccff;
+        .back {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 18px;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 6px;
+            text-decoration: none;
+            color: #cfcfff;
+            font-size: 14px;
+        }
+
+        .back:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #bbbbbb;
+        }
+
+        .footer a {
+            color: #cfcfff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -41,31 +81,64 @@
 <div class="container">
     <h1>Правила и информация</h1>
 
-    <p>
-        CubeVerse — это игровой проект Minecraft.
-        Все платежи являются добровольными и направлены
-        на пополнение внутренней виртуальной валюты сервера.
-    </p>
+    <div class="block">
+        <p>
+            CubeVerse — это игровой проект Minecraft.
+            Проект предоставляет пользователям доступ
+            к внутриигровым возможностям и сервисам.
+        </p>
+    </div>
 
-    <p>
-        Виртуальная валюта используется исключительно внутри игрового процесса
-        и не имеет реальной ценности вне игры.
-        Она не подлежит обмену на реальные товары или услуги.
-    </p>
+    <div class="block">
+        <p>
+            Все платежи на сайте являются добровольными
+            и предназначены исключительно для пополнения
+            внутренней донат-валюты сервера.
+        </p>
 
-    <p>
-        Начисление валюты производится после подтверждения платежа
-        платёжной системой.
-    </p>
+        <p>
+            Виртуальная валюта используется только
+            в рамках игрового процесса и не имеет
+            реальной ценности вне проекта.
+        </p>
+    </div>
 
-    <p>
-        По всем вопросам вы можете связаться с администрацией проекта
-        через указанные контакты.
-    </p>
+    <div class="block">
+        <p>
+            Донат-валюта не подлежит обмену
+            на реальные деньги, товары или услуги.
+        </p>
 
-    <p style="text-align:center;margin-top:20px;">
-        <a href="index.html">← На главную</a>
-    </p>
+        <p>
+            Начисление валюты производится автоматически
+            после подтверждения платежа платёжной системой.
+        </p>
+    </div>
+
+    <div class="block">
+        <p>
+            Администрация проекта вправе вносить изменения
+            в правила и условия использования сервиса
+            без предварительного уведомления пользователей.
+        </p>
+
+        <p>
+            По всем вопросам, связанным с работой проекта
+            и платежами, пользователь может обратиться
+            в службу поддержки.
+        </p>
+    </div>
+
+    <div style="text-align:center;">
+        <a class="back" href="index.html">← Вернуться на главную</a>
+    </div>
+
+    <div class="footer">
+        <p>
+            <a href="privacy.html">Политика конфиденциальности</a> |
+            <a href="terms.html">Пользовательское соглашение</a>
+        </p>
+    </div>
 </div>
 
 </body>

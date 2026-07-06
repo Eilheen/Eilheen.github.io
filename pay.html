@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
+        * { box-sizing: border-box; }
 
         body {
             margin: 0;
@@ -20,10 +18,10 @@
         .container {
             max-width: 700px;
             margin: 60px auto;
-            background: rgba(0, 0, 0, 0.4);
-            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.45);
+            border-radius: 14px;
             padding: 32px;
-            box-shadow: 0 0 25px rgba(0,0,0,0.5);
+            box-shadow: 0 0 25px rgba(0,0,0,0.6);
         }
 
         h1 {
@@ -43,19 +41,44 @@
             line-height: 1.6;
         }
 
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: #cfcfff;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+
         .button {
             display: block;
             width: 100%;
             padding: 14px;
-            background: #2aabee;
+            background: linear-gradient(135deg, #4a6cff, #6b8cff);
             color: #fff;
             text-align: center;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 10px;
             font-size: 16px;
             font-weight: bold;
-            cursor: not-allowed;
-            opacity: 0.85;
+            cursor: pointer;
+            border: none;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            opacity: 0.9;
         }
 
         .note {
@@ -126,22 +149,35 @@
         <p><b>Товар:</b> Внутренняя донат-валюта сервера CubeVerse</p>
         <p><b>Курс:</b> 1 рубль = 1 единица игровой валюты</p>
         <p>
-            Виртуальная валюта используется исключительно внутри
-            игрового процесса Minecraft и не имеет реальной ценности
-            вне игры.
+            Валюта используется исключительно внутри игрового процесса Minecraft
+            и не имеет реальной ценности вне игры.
         </p>
     </div>
 
-    <a class="button">Перейти к оплате</a>
+    <!-- ФОРМА -->
+    <form action="#" method="post">
+        <div class="form-group">
+            <label>Никнейм в Minecraft</label>
+            <input type="text" name="nickname" placeholder="Введите никнейм" required>
+        </div>
+
+        <div class="form-group">
+            <label>Сумма пополнения (в рублях)</label>
+            <input type="number" name="amount" min="10" placeholder="Например: 100" required>
+        </div>
+
+        <button class="button" type="submit">
+            Перейти к оплате
+        </button>
+    </form>
 
     <p class="note">
-        Платёжная ссылка формируется индивидуально платёжной системой
-        и предоставляется пользователю через интерфейс проекта,
-        в том числе внутри игрового сервера.
+        После нажатия кнопки будет сформирована индивидуальная платёжная ссылка
+        платёжной системой. Оплата производится на стороне платёжного сервиса.
     </p>
 
     <p class="note">
-        Начисление игровой валюты происходит после подтверждения платежа.
+        Начисление игровой валюты происходит автоматически после подтверждения платежа.
     </p>
 
     <div style="text-align:center;">

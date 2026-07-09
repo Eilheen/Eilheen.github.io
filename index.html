@@ -1,9 +1,10 @@
+```html
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>CubeVerse — Minecraft сервер</title>
-<meta name="verification" content="b957d47523c4e92a822cc38703a3bcc3" />
+    <meta name="verification" content="b957d47523c4e92a822cc38703a3bcc3" />
 
     <style>
         body {
@@ -74,6 +75,31 @@
             opacity: 0.9;
         }
 
+        .resource-btn {
+            display: block;
+            text-align: center;
+            padding: 16px;
+            margin-top: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            transition: transform .2s ease, box-shadow .2s ease, opacity .2s ease;
+            box-shadow: 0 6px 18px rgba(46,204,113,.35);
+        }
+
+        .resource-btn:hover {
+            transform: translateY(-3px);
+            opacity: .95;
+            box-shadow: 0 10px 25px rgba(46,204,113,.45);
+        }
+
+        .resource-btn:active {
+            transform: scale(0.98);
+        }
+
         .footer {
             margin-top: 40px;
             text-align: center;
@@ -132,6 +158,17 @@
     </div>
 
     <div class="highlight">
+        <p><b>Ресурс-пак сервера</b></p>
+        <p>Если ресурспак не загрузился автоматически, скачайте его вручную:</p>
+
+        <a class="resource-btn"
+           href="https://disk.yandex.ru/d/qTx98JKy6npa9A"
+           target="_blank">
+            📦 Загрузить ресурспак
+        </a>
+    </div>
+
+    <div class="highlight">
         <p><b>Курс:</b> 1 рубль = 1 единица игровой валюты</p>
         <p>
             Виртуальная валюта не имеет реальной ценности вне игры и
@@ -172,3 +209,4 @@
 
 </body>
 </html>
+```
